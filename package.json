@@ -1,0 +1,22 @@
+{
+  "name": "core-html5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sync": "browser-sync start --directory --server --files \"./page/*.html, ./build/*.js\"",
+    "watch": "webpack --watch",
+    "dev": "npm run sync & npm run watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "ts-loader": "^1.1.0",
+    "typescript": "^2.0.8",
+    "webpack": "^1.13.3"
+  }
+}
